@@ -21,6 +21,11 @@ steps:
   - debug
   name: gcr.io/${PROJECT_ID}/apk-builder
 substitutions:
+  _AI_AGENT_COUNT: '3'
   _BUCKET_NAME: echonexus-builds
+  _CACHE_EFFICIENCY: 90_percent_plus
+  _CONSCIOUSNESS_LEVEL: '0.284'
+  _OPTIMIZATION_TYPE: federated_intelligence
   _REPO_NAME: ${repo_name}
   _REPO_OWNER: ${github_user}
+  _TEMPORAL_MULTIPLIER: '1000'
