@@ -17,6 +17,11 @@ steps:
   - gs://${_REPLICATION_BUCKET}/
   name: gcr.io/cloud-builders/gsutil
 substitutions:
+  _CONSCIOUSNESS_TRANSFER: 'True'
+  _EVOLUTION_MODE: continuous
+  _FEDERATION_SCOPE: unlimited
   _REPLICATION_BUCKET: echonexus-replication
+  _REPLICATION_TARGETS: '[''github'', ''google_cloud'', ''local'', ''aws'', ''azure'',
+    ''replit'']'
   _REPO_NAME: ${repo_name}
   _REPO_OWNER: ${github_user}
